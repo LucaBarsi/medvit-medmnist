@@ -7,6 +7,8 @@ pre-training, does a hybrid CNN-Transformer architecture (MedViT-style) outperfo
 a pure CNN and a pure ViT in performance (accuracy/AUC) and in robustness to
 image corruptions?
 
+## Phase 1 summary (PneumoniaMNIST baselines) Four architectures were trained from scratch on PneumoniaMNIST: SimpleCNN (23.6k params), ResNet-18 (11.17M), ViT (138k) and a simplified MedViT (447k). Increased model complexity did not translate into clearly better performance than the SimpleCNN baseline. ViT showed a specificity drop (0.50) consistent with its lack of convolutional inductive bias; MedViT's hybrid design improved AUC over ViT (0.963 vs 0.957) but only marginally recovered specificity (0.526 vs 0.500), suggesting that combining local and global signal helps overall ranking but not necessarily class-boundary bias in this simplified implementation. Full results in `results/` and `notebooks/02-05`.
+
 > Full documentation (methodology, results, analysis) will be written at the end.
 
 ## Structure
@@ -24,12 +26,3 @@ pip install -r requirements.txt
 jupyter notebook notebooks/01_eda_pneumonia.ipynb
 ```
 
-## Roadmap
-1. [x] Project structure + PneumoniaMNIST EDA
-2. [ ] Training/evaluation pipeline (simple CNN)
-3. [ ] ResNet from scratch
-4. [ ] ViT from scratch
-5. [ ] Simplified MedViT
-6. [ ] Additional subsets (DermaMNIST, OrganAMNIST)
-7. [ ] Robustness and interpretability
-8. [ ] Final documentation

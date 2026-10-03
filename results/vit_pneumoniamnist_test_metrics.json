@@ -1,0 +1,10 @@
+{
+  "task": "binary-class",
+  "accuracy": 0.8125,
+  "balanced_accuracy": 0.75,
+  "auc": 0.9567280298049528,
+  "f1": 0.8695652173913043,
+  "sensitivity": 1.0,
+  "specificity": 0.5,
+  "majority_baseline_accuracy": 0.625
+}
