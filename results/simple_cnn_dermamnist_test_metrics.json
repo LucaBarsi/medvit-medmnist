@@ -1,0 +1,8 @@
+{
+  "task": "multi-class",
+  "accuracy": 0.7281795511221946,
+  "balanced_accuracy": 0.36046251699650106,
+  "auc": 0.9061209965472747,
+  "f1": 0.39788004335338367,
+  "majority_baseline_accuracy": 0.6688279301745635
+}
